@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: black;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:20px ;
+}
+
+.logo{
+    display: flex;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.navbar li a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.navbar li{
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.Section-1{
+    height: 100vh;
+    display: flex;
+}
+
+.Sub-section-2{
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.292);
+}
+
+.Sub-section-1{
+    width: 60%;
+    background-image: url(../Image/kos3.jpg);
+    background-position: center;
+}
+
+.Sub-section-1-1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.Sub-section-1-1 h1 span{
+    position: relative;
+}
+
+.Sub-section-1-1 h1 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid white;
+    animation: typing 4s steps(18) infinite;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0 -35px 0 35px;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+    }
+}
+
+.Sub-section-2-2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sub-section-2-2 h1{
+    font-size: 50px;
+}
+
+.Sub-section-2-2 p{
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.Section-2{
+    height: 90vh;
+    padding: 50px 40px 50px 40px;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 40px 50px 40px;
+    transition: all 0.8s ease;
+    border-radius: 50px;
+}
+
+.Section-2:hover{
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border-radius: 50px;
+}
+ 
+.Section-2 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 20px 40px;
+    
+}
+
+.Section-3{
+    margin: 40px 50px 40px 50px;
+}
+
+.image-gallery{
+    padding: 50px 50px 40px 50px;
+}
+
+.image-gallery img{
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px;
+    transition: all 1s ease;
+}
+
+.image-gallery .im1:hover{
+    border-radius: 0px;
+    rotate: 10deg;
+    transform: rotateY(160deg);
+}
+
+.image-gallery .im2:hover{
+    border-radius: 0px;
+    rotate: -10deg;
+    transform: rotateY(160deg);
+}
+
+.image-gallery div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.foot-container{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    gap: 40px;
+}
+
+.foot-container div{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.foot-1,.foot-2{
+    margin: 0px 20px 0px 20px;
+}
+
+.foot-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.foot-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 100;
+}
+
+.header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0px 2.5%;
+}
+
+.header div div a{
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.header .phone{
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.header div div a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.header .phone:hover{
+    cursor: pointer;
+}
+
+
+/* summary table */
+.sec1-container{
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    padding: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.sec1-container table{
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.sec1-container td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.sec1-container tr{
+    transition: all .5s ease;
+}
+
+#tic{
+    background-color: #949494;
+}
+
+.sec1-container tr:hover,#tic:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+
+#continueBTN{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#continueBTN:disabled{
+    background-color: rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+    border: none;
+    transition: all 2s ease;
+}
+
+#continueBTN:enabled{
+    background-color: black;
+    color: white;
+    transition: all 2s ease;
+    cursor: pointer;
+}

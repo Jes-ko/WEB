@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+section.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: black;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:20px ;
+}
+
+.logo{
+    display: flex;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.navbar li a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border-radius: 10px;
+}
+
+.navbar li{
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+.sec-con{
+    display: flex;
+    width: 100%;
+    height: 91vh;
+    padding: 20px 20px 20px 20px;
+    gap: 20px;
+    background-color: rgb(163, 163, 163);
+}
+
+#sec1{
+    background-image: url(../Image/ben11.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px 10px 20px 0px;
+}
+
+#sec2{
+    background-image: url(..//Image/kos11.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 0px;
+}
+
+#sec1 div{
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    transition: all 0.75s ease;
+}
+
+#sec1 div:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    color: black;
+}
+
+
+#sec2 div{
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    transition: all .75s ease;
+}
+
+#sec2 div:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    color: black;
+}
+
+.com div{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.748);
+    padding: 50px 30px 50px 30px;
+}
+
+.com div h1{
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+
+.com div a{
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    font-size: 40px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    color: black;
+    transition: all .5s ease;
+}
+
+.com div a:hover{
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+@media screen and (max-width:650px) and (min-width:200px){
+    section .header{
+        position: relative;
+        top: 0;
+        box-shadow: 0px 5px 10px 0px;
+        z-index: 1000;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav li a {
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        padding: 10px 13px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+    }
+
+    .sec-con{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding: 20px 20px 20px 20px;
+        gap: 50px;
+        background-color: rgb(163, 163, 163);
+    }
+
+    #sec1{
+        background-image: url(../Image/ben11.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    #sec2{
+        background-image: url(..//Image/kos11.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    #sec1 div{
+        color: white;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    #sec2 div{
+        color: white;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .com div{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.748);
+        padding: 0px 30px 50px 30px;
+        margin: 50px;
+    }
+
+    .com div h1{
+        font-size: 20px;
+        margin: 50px;
+    }
+
+    .com div a{
+        text-decoration: none;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 10px;
+        padding: 5px 15px 5px 15px;
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        transition: all .5s ease;
+    }
+
+    .com div a:hover{
+        border: 1px solid rgba(0, 0, 0, 0.447);
+        color: rgb(255, 255, 255);
+        background-color: black;
+    }
+}

@@ -1,0 +1,227 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: black;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:20px ;
+}
+
+.logo{
+    display: flex;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.navbar li a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.navbar li{
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.Section-1{
+    width: 100%;
+    height: 95vh;
+    background-image: url(../Image/ben3.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.Sub-section-1{
+    height: 50%;
+}
+
+.Sub-section-1-1{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+
+.Sub-section-2{
+    height: 50%;
+    display: flex;
+
+}
+
+.Sub-section-2-1{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.Sub-section-2-1 h1 span{
+    position: relative;
+}
+
+.Sub-section-2-1 h1 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid white;
+    animation: typing 4s steps(12) infinite;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0 -35px 0 35px;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+    }
+}
+
+.Sub-section-2-2{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    word-spacing: 5px;
+    font-size: 20px;
+    padding: 0px 100px 0px 100px;
+    color: white;
+    background-color: black;
+}
+
+.Section-2{
+    margin: 50px 70px 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+    transition: all .8s ease;
+    border-radius: 50px;
+}
+
+.Section-2:hover{
+    background-color: gray;
+    border-radius: 50px;
+    color: white ;
+}
+.Section-2 h1{
+    font-size: 60px;
+}
+
+.Section-2 iframe{
+    margin: 20px;
+    border-radius: 20px;
+    transition: all .7s ease;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.Section-2 iframe:hover{
+    transform: scale(1.1);
+}
+
+.Section-3{
+    margin:40px 40px 40px 40px;
+}
+
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-gallery img{
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.image-gallery img:hover{
+    transform: scale(1.05);
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.foot-container{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    gap: 40px;
+}
+
+.foot-container div{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.foot-1,.foot-2{
+    margin: 0px 20px 0px 20px;
+}
+
+.foot-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.foot-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}

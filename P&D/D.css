@@ -1,0 +1,254 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: black;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:20px ;
+}
+
+.logo{
+    display: flex;
+}
+
+nav li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.navbar li a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.navbar li{
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.form{
+    background-color: aliceblue;
+    z-index: 1;
+    border-radius: 20px;
+}
+.form h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.form .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form .btn input{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.form .btn input:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.form form{
+    margin: 50px;
+}
+
+.g{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    gap: 50px;  
+}
+
+.g input{
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    transition: all .25s ease;
+}
+
+.g input:hover{
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.back-main{
+    position: relative;
+    width: 100%;
+    height: 91vh;
+    background-color: rgba(118, 118, 118, 0.512);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-main .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.back-main .back div{
+    position: absolute;
+    display: block;
+}
+
+.back-main .back div:nth-child(1){
+    left: 0%;
+    animation: animate 5s linear infinite;
+    animation-delay: 0s;
+}
+
+.back-main .back div:nth-child(2){
+    left: 20%;
+    animation: animate 10s linear infinite;
+    animation-delay: 0s;
+}
+
+.back-main .back div:nth-child(3){
+    left: 40%;
+    animation: animate 5s linear infinite;
+    animation-delay: 0s;
+}
+
+.back-main .back div:nth-child(4){
+    left: 60%;
+    animation: animate 20s linear infinite;
+    animation-delay: -10s;
+}
+
+.back-main .back div:nth-child(5){
+    left: 80%;
+    animation: animate 25s linear infinite;
+    animation-delay: -15s;
+}
+
+
+.back-main .back div:nth-child(6){
+    left: 95%;
+    animation: animate 25s linear infinite;
+    animation-delay: -20s;
+}
+
+@keyframes animate {
+    0%
+    {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);        
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    20%
+    {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%
+    {
+        transform: translateY(-20px) rotate(90deg);
+    }
+    60%
+    {
+        transform: translateY(20px) rotate(180deg);
+    }
+    80%
+    {
+        transform: translateY(-20px) rotate(60deg);
+    }
+    100%
+    {
+        top: 100%;
+        transform: translateY(-20px) rotate(0deg);
+    }
+}
+
+
+@media screen and (max-width:650px) and (min-width:200px){
+    
+    section .header{
+        position: relative;
+        top: 0;
+        box-shadow: 0px 5px 10px 0px;
+        z-index: 1000;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+    }
+
+    nav li a {
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        padding: 10px 13px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+    }
+}

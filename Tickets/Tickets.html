@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tickets/Ticket.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Tickets</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../Appimg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Appimg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Appimg/favicon-16x16.png">
+    <link rel="manifest" href="../Appimg/site.webmanifest">
+    <link rel="mask-icon" href="../Appimg/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../Appimg/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../Appimg/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <div><a href="../Hatchery/Hatchery.html" >< Back</a></div>
+            <div><h1>Buy Tickets</h1></div>
+            <div class="phone">Show your tickets via mobile <br>device or print at home</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sec-container">
+            <h1>Please Fill the Form</h1>
+            <div class="sec-sub">
+                <div class="Dates">
+                    <p>Select a Day to visit</p>
+                    <input type="text" id="datepicker" placeholder="Select a date......">
+                </div>
+                <br>
+                <div class="Duration">
+                    <p>Select a time to visit</p>
+                    <select id="duration" class="Duration-select">
+                        <option value="07.00 am - 08.00 am" value="non-peak">07.00 am - 08.00 am</option>
+                        <option value="08.00 am - 09.00 am" value="non-peak">08.00 am - 09.00 am</option>
+                        <option value="09.00 am - 10.00 am" value="non-peak">09.00 am - 10.00 am</option>
+                        <option value="10.00 am - 11.00 am (Peak)" value="peak">10.00 am - 11.00 am (Peak)</option>
+                        <option value="11.00 am - 12.00 pm (Peak)" value="peak">11.00 am - 12.00 pm (Peak)</option>
+                        <option value="12.00 pm - 01.00 pm (Peak)" value="peak">12.00 pm - 01.00 pm (Peak)</option>
+                        <option value="01.00 pm - 02.00 pm" value="non-peak">01.00 pm - 02.00 pm</option>
+                        <option value="02.00 pm - 03.00 pm" value="non-peak">02.00 pm - 03.00 pm</option>
+                        <option value="03.00 pm - 04.00 pm (Peak)" value="peak">03.00 pm - 04.00 pm (Peak)</option>
+                        <option value="04.00 pm - 05.00 pm (Peak)" value="peak">04.00 pm - 05.00 pm (Peak)</option>
+                        <option value="05.00 pm - 06.00 pm (Peak)" value="peak">05.00 pm - 06.00 pm (Peak)</option>
+                    </select>
+                </div>    
+            </div>
+
+            <div class="sec-sub1">
+                <div class="Guests">
+                    <h3>Select the ticket amount</h3>
+                    <br>
+                    <ul>
+                        <li class="box">
+                            <label for="name">SL Adult</label>
+                            <div>
+                                <div class="dec button">-</div>
+                                <input type="text" name="qty" id="Adult-SL" value="0" class="input-field">
+                                <div class="inc button">+</div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="box">
+                            <label for="name">SL Child</label>
+                            <div>
+                                <div class="dec button">-</div>
+                                <input type="text" name="qty" id="Child-SL" value="0" class="input-field">
+                                <div class="inc button">+</div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="box">
+                            <label for="name">Foreigner Adult</label>
+                            <div>
+                                <div class="dec button">-</div>
+                                <input type="text" name="qty" id="Adult-F" value="0" class="input-field">
+                                <div class="inc button">+</div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="box">
+                            <label for="name">Foreigner Child</label>
+                            <div>
+                                <div class="dec button">-</div>
+                                <input type="text" name="qty" id="Child-F" value="0" class="input-field">
+                                <div class="inc button">+</div>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="box">
+                            <label for="name">Infant</label>
+                            <div>
+                                <div class="dec button">-</div>
+                                <input type="text" name="qty" id="Infant" value="0" class="input-field">
+                                <div class="inc button">+</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="pricing">
+                    <h2>Pricing</h2>
+                    <table>
+                        <tr>
+                            <th>Ticket Type</th>
+                            <th>Normal Hour Charge</th>
+                            <th>Peak Hour Charge</th>
+                        </tr>
+                        <tr>
+                            <td>SL Adult</td>
+                            <td>$4</td>
+                            <td>$6</td>
+                        </tr>
+                        <tr>
+                            <td>SL Child</td>
+                            <td>$2</td>
+                            <td>$3</td>
+                        </tr>
+                        <tr>
+                            <td>Foreigner Adult</td>
+                            <td>$10</td>
+                            <td>$13</td>
+                      </tr>
+                      <tr>
+                            <td>Foreigner Child</td>
+                            <td>$5</td>
+                            <td>$8</td>
+                      </tr>
+                      <tr>
+                            <td>Infant</td>
+                            <td>Free</td>
+                            <td>Free</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+            <div class="sec1-container">
+                <div class="summary-table">  
+                    <h2>Summary</h2>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Date</td>
+                            <td id="Date-Sum"></td>
+                        </tr>
+                        <tr>
+                            <td>Time</td>
+                            <td id="Time-Sum"></td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td id="Duration-Sum"></td>
+                        </tr>
+                        <tr id="tic">
+                            <td>Tickets</td>
+                            <td>Charges</td>
+                        </tr>
+                        <tr>
+                            <td id="SLA"></td>
+                            <td id="SLA-P"></td>
+                        </tr>
+                        <tr>
+                            <td id="SLC"></td>
+                            <td id="SLC-P"></td>
+                        </tr>
+                        <tr>
+                            <td id="FA"></td>
+                            <td id="FA-P"></td>
+                        </tr>
+                        <tr>
+                            <td id="FC"></td>
+                            <td id="FC-P"></td>
+                        </tr>
+                        <tr>
+                            <td id="I"></td>
+                            <td id="I-P"></td>
+                        </tr>
+                        <tr id="tic">
+                            <td>Total Payable</td>
+                            <td id="Total-Sum"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="continue">
+                        <button id="continueBTN" disabled>Continue with purchase</button>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    
+    
+    
+    <script src="../Tickets/Tickets.js"></script>
+    <script>
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date(),
+        maxDate: new Date(2020, 12, 31),
+        yearRange: [2000,2020]
+    });
+
+    const continueBTN = document.getElementById("continueBTN");
+    continueBTN.addEventListener("click", function () 
+    {
+         window.location.href = "../Tickets/Details.html";
+    });
+
+    </script>
+</body>
+</html>
