@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Explorer page editing starts */
+/* main container that contains all the elements that is edited */
+.Explorer-main-container{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.668),rgba(0, 0, 0, 0.592)); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Explore-main-sub-container{
+    text-align: center;
+}
+
+.Explore-main-sub-container h1{
+    font-family: sans-serif;
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 20px 0px 20px;
+    transition: all .5s ease;
+}
+
+.Explore-main-sub-container h1:hover{
+    -webkit-text-stroke: 5px #fff;
+    color: transparent;
+}
+
+.Explore-main-sub-container a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+    transition: all .5s ease;
+}
+
+.Explore-main-sub-container a:hover{
+    color: black;
+    background-color: white;
+}
+
+.bg-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* Explorer page editing ends */
+
+
+/* Sub-Explore page editing starts*/
+.Explorer-sub{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.Explorer-sub-common{
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: all .4s ease;
+}
+
+#Tea{
+    background-image: url(../Image/sec-2.jpg);
+}
+
+#Sea{
+    background-image: url(../Image/sec-4.jpeg);
+}
+
+#Other{
+    background-image: url(../Image/sec-5.jpg);
+}
+
+.Explorer-sub-common h1{
+    margin-top: 250px;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.Explorer-sub-common a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    margin: 200px 0px 100px 0px;
+    transition: all .5s ease;
+}
+
+.Explorer-sub-common a:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+/* Sub-Explore page editing ends */

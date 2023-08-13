@@ -1,0 +1,489 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.Hikkaduwa-explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    font-family: sans-serif;
+}
+
+.Hikkaduwa-explore::before{
+    content: " ";
+    background-image: url(../Image/hika1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 90%;
+}
+
+.Hikkaduwa-sub-explore{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.423);
+    z-index: 2;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.Hikkaduwa-sub-explore h1{
+    position: relative;
+    font-size: 160px;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+}
+
+.Hikkaduwa-sub-explore a{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px 30px;
+    margin-top: 80px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    transition: all .5s ease;
+}
+
+.Hikkaduwa-sub-explore a:hover{
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+
+body{
+    width: 100%;
+}
+
+div.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 1000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: black;
+    color: white;
+
+}
+
+.navbar li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:20px ;
+}
+
+.logo{
+    display: flex;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.navbar li a:hover{
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.navbar li{
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.Hikkaduwa-body-1{
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 40px 0px 40px;
+}
+
+.Hikkaduwa-body-sub-1{
+    background-color: white;
+    height: 100vh;
+    padding: 40px;
+}
+
+.Hikkaduwa-body-sub-1 div{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 0px 0px 40px 0px;
+
+}
+
+.Hikkaduwa-body-sub-1 div img{
+    width: 500px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 0px;
+    transition: all .75s ease;
+}
+
+.Hikkaduwa-body-sub-1 div img:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.Hikkaduwa-body-sub-1 h1{
+    font-size: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+.Hikkaduwa-body-sub-1 p{
+    font-size: 19px;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.Hikkaduwa-body-2{
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+}
+
+.Hikkaduwa-body-sub-2 h1{
+    font-size: 50px;
+    margin: 0px 0px 40px 0px;
+}
+
+.Hikkaduwa-body-sub-2-1{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.Hikkaduwa-body-sub-2-1 div{
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    transition: all 1s ease;
+}
+
+.Hikkaduwa-body-sub-2-1 div:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.Hikkaduwa-body-sub-2-1 h1{
+    font-size: 30px;
+}
+
+.Hikkaduwa-body-sub-2-1 p{
+    font-size: 19px;
+    word-spacing: 5px;
+}
+
+.Hikkaduwa-body-sub-2{
+    padding: 40px;
+}
+
+.Hikkaduwa-body-3 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px;
+    gap: 100px;
+    transition: all 1s ease;
+}
+
+.Hikkaduwa-body-3 div:hover{
+    box-shadow: 0px 0px 20px 0px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.Hikkaduwa-body-3 h1{
+    font-size: 60px;
+}
+
+.Hikkaduwa-body-3 iframe{
+    margin: 20px;
+}
+
+.Hikkaduwa-body-4{
+    display: flex;
+    justify-content: center;
+    margin: 20px 350px;
+}
+
+
+
+.Hikkaduwa-body-4 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .4s ease;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    transition: .4s ease;
+}
+
+.Hikkaduwa-body-5{
+    justify-content: center;
+    text-align: center;
+    margin: 20px 250px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.Hikkaduwa-body-4 a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.foot-container{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    gap: 40px;
+}
+
+.foot-container div{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.foot-1,.foot-2{
+    margin: 0px 20px 0px 20px;
+}
+
+.foot-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.foot-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+@media screen and (max-width:650px) and (min-width:200px){
+
+.Hikkaduwa-sub-explore h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+}
+
+.Hikkaduwa-sub-explore a{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 15px;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+    
+section .header{
+    position: relative;
+    top: 0;
+    box-shadow: 0px 5px 10px 0px;
+    z-index: 1000;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
+.Hikkaduwa-body-sub-1{
+    background-color: white;
+    height: 100vh;
+    padding: 40px;
+}
+
+.Hikkaduwa-body-sub-1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin: 0px 0px 40px 0px;
+
+}
+
+.Hikkaduwa-body-sub-1 div img{
+    width: 200px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+.Hikkaduwa-body-sub-1 h1{
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.Hikkaduwa-body-sub-1 p{
+    font-size: 10px;
+    line-height: 12px;
+    word-spacing: 1px;
+}
+
+.Hikkaduwa-body-sub-2 h1{
+    font-size: 20px;
+    margin: 0px 0px 40px 0px;
+}
+
+.Hikkaduwa-body-sub-2-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.Hikkaduwa-body-sub-2-1 div{
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.Hikkaduwa-body-sub-2-1 h1{
+    font-size: 15px;
+}
+
+.Hikkaduwa-body-sub-2-1 p{
+    font-size: 10px;
+    word-spacing: 2px;
+}
+
+.Hikkaduwa-body-sub-2{
+    padding: 20px;
+}
+
+.Hikkaduwa-body-3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 0px;
+}
+
+.Hikkaduwa-body-3 div:hover{
+    box-shadow: 0px 0px 20px 0px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.Hikkaduwa-body-3 h1{
+    font-size: 25px;
+}
+
+.Hikkaduwa-body-3 iframe{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.foot-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+}
+
+.foot-container div{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.foot-1,.foot-2{
+    margin: 0px 20px 0px 20px;
+}
+
+.foot-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.foot-1 h1, .foot-2 h1{
+    font-size: 15px;
+}
+
+.foot-1 p, .foot-2 p{
+    font-size: 10px;
+}
+
+.foot-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 5px;
+}
+
+}
