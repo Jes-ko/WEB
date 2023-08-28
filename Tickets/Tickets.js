@@ -1324,7 +1324,8 @@ function calculateTotal() {
     const FChildPeak = 8;
 
     const selectedTime = document.getElementById("duration").value,
-    PeakHour = selectedTime === "peak" || selectedTime === "non-peak";
+    const PeakHour = selectedTime === "10-11" || selectedTime === "11-12" || selectedTime === "12-01" || selectedTime === "03-04" || selectedTime === "04-05" || selectedTime === "05-06";
+
 
     const Total =
     AdultS * (PeakHour ? SLAdultPeak : SLAdultNon) +
@@ -1338,7 +1339,8 @@ function calculateTotal() {
 function update(){
     const date = document.getElementById("datepicker").value,
     selectedTime = document.getElementById("duration").value,
-    PeakHour = selectedTime === "peak" || selectedTime === "non-peak";
+    const PeakHour = selectedTime === "10-11" || selectedTime === "11-12" || selectedTime === "12-01" || selectedTime === "03-04" || selectedTime === "04-05" || selectedTime === "05-06";
+
 
     const dateCell = document.getElementById("Date-Sum");
     const timeCell = document.getElementById("Time-Sum");
